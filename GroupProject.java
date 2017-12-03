@@ -1,7 +1,7 @@
 public class GroupProject {
   public static void main(String[] args) {
 
-      int csvLength = 413;
+      int csvLength = 412;
 
       String[] player = new String[csvLength];    // col 0
       String[] position = new String[csvLength];  // col 1
@@ -19,13 +19,13 @@ public class GroupProject {
       int cate = 0; // categories
 
       while (!TextIO.eof()) {
+
         String cell = TextIO.getln(); // read in the next cell from the file
-        
         String[] columns = cell.split(","); // split the columns apart
 
         //establish categories (cate)
         player[cate] = columns[0];
-        position[cate] = columns[1];
+        pos[cate] = columns[1];
         team[cate] = columns[2];
         rebounds[cate] = Integer.parseInt(columns[3]);
         assists[cate] = Integer.parseInt(columns[4]);
