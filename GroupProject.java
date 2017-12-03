@@ -28,7 +28,7 @@ public class GroupProject {
         String[] fields = line.split(","); // split the columns apart
 
 
-
+//establish categories 
       player[cate] = fields[0];
       position[cate] = fields[1];
       team[cate] = fields[2];
