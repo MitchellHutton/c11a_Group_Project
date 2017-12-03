@@ -19,8 +19,8 @@ public class GroupProject {
       int cate = 0; // categories
 
       while (!TextIO.eof()) {
-
         String cell = TextIO.getln(); // read in the next cell from the file
+        
         String[] columns = cell.split(","); // split the columns apart
 
         //establish categories (cate)
