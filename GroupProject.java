@@ -13,6 +13,15 @@ public class GroupProject {
       int[] blocks = new int[csvLength];          // col 6
       int[] points = new int[csvLength];          // col 7
 
+      System.out.println("Welcome to the fantasy draft!!!!");
+      System.out.println("This is a 4 team NBA fantasy draft.");
+      System.out.println("The stats are Points, Steals, Blocks, Assists, and Rebounds.");
+      System.out.println("Good luck!");
+      System.out.println();
+
+      System.out.println("How many teams are in your draft?:");
+      int teams = TextIO.getlnInt();
+
       // Read csv
       TextIO.readFile("fs.csv");
       TextIO.getln();  // skip the line of headers...
@@ -39,16 +48,6 @@ public class GroupProject {
 
       int draftPool = cate;
 
-      // introduction to the draft
-      System.out.println("Welcome to the fantasy draft!!!!");
-      System.out.println("This is a 4 team NBA fantasy draft.");
-      System.out.println("The stats are Points, Steals, Blocks, Assists, and Rebounds.");
-      System.out.println("Good luck!");
-      System.out.println();
-
-      // Prompt the user for how many teams they want
-      System.out.println("How many teams are in your draft?:");
-      int teams = TextIO.getlnInt();
       int rounds = 10; // number of players per team and rounds of the draft
       int[][] draftResults = new int[teams][rounds]; // 2D array for draft results
 
