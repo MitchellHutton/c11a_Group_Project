@@ -4,7 +4,7 @@ public class GroupProject {
       int csvLength = 413;
 
       String[] player = new String[csvLength];    // col 0
-      String[] position = new String[csvLength];  // col 1
+      String[] pos = new String[csvLength];       // col 1
       String[] team = new String[csvLength];      // col 2
 
       int[] rebounds = new int[csvLength];        // col 3
@@ -36,6 +36,8 @@ public class GroupProject {
         cate++; // increments the categories
 
       } // end of while loop
+
+      int draftPool = cate;
 
       // introduction to the draft
       System.out.println("Welcome to the fantasy draft!!!!");
